@@ -1,0 +1,10 @@
+[
+    {
+        "placeholder": "// inject:fragment1",
+        "fragmentFilePath": "./fragmentFile1.js"
+    },
+    {
+        "placeholder": "<!-- inject:fragment2 -->",
+        "fragmentFilePath": "./fragmentFile2.html"
+    }
+]

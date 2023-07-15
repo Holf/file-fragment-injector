@@ -1,2 +1,7 @@
 /node_modules
+
+# This test file is generated and should not be committed
 /testAssets/destFile.html
+
+# Prevent local npm `pack` experiments getting committed
+*.tgz

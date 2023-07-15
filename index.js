@@ -1,16 +1,12 @@
 const fs = require("fs");
 const path = require("path");
 
-const newRegex = /(?:<!--|\/\*)% *FRAGMENT_PATH: *(.*?) *%(?:-->|\*\/)/g;
-
-const coreRegex = / *FRAGMENT_PATH: *(.*?) */;
-
 const telomeres = [
-  // XML
+  // XML, HTML, etc.
   ["<!--", "-->"],
-  // C, C++, Java, etc
+  // C, C++, Java, etc.
   [/\/\*/, /\*\//],
-  // Shells, Python, Ruby, etc
+  // Shells, Python, Ruby, etc.
   ["#", "#"],
   // Powershell
   ["<#", "#>"]
@@ -38,8 +34,6 @@ const bigglyRegex = new RegExp(
   `(?:${commentOpeners})% *FRAGMENT_PATH: *(.*?) *%(?:${commentClosers})`,
   "g"
 );
-
-const fragmentPlaceholderRegEx = /<!--% *FRAGMENT_PATH:(.*?) *%-->/g;
 
 const injectFileFragment = (sourceFilePath, destFilePath) => {
   const sourceFileContent = fs.readFileSync(sourceFilePath, "utf8");

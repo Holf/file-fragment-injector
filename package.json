@@ -4,7 +4,7 @@
   "description": "A simple NPM package that allows you to inject the contents of one file into another, replacing a designated placeholder.",
   "main": "index.js",
   "bin": {
-    "file-fragment-injector": "./file-fragment-injector.js"
+    "file-fragment-injector": "./cli.js"
   },
   "scripts": {
     "test": "jest",

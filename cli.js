@@ -2,14 +2,13 @@
 
 const injectFileFragment = require("./index.js");
 
-const [fragmentFilePath, destFilePath, fragmentPlaceholder] =
-  process.argv.slice(2);
+const [sourceFilePath, destFilePath] = process.argv.slice(2);
 
-if (!sourceFile || !fragmentFile || !placeholder) {
+if (!sourceFilePath || !destFilePath) {
   console.error(
-    "You must provide a Fragment File Path, a Destination File Path, and a Fragment Placeholder."
+    "You must provide a Source File Path and a Destination File Path."
   );
   process.exit(1);
 }
 
-injectFileFragment(fragmentFilePath, destFilePath, fragmentPlaceholder);
+injectFileFragment(sourceFilePath, destFilePath);

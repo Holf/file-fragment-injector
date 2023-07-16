@@ -1,13 +1,12 @@
 const fs = require("fs");
 const path = require("path");
-
-const fragmentPlaceholderRegEx = /<!--% *FRAGMENT_PATH:(.*?) *%-->/g;
+const { placeholderRegExp } = require("./placeholderRegExp");
 
 const injectFileFragment = (sourceFilePath, destFilePath) => {
   const sourceFileContent = fs.readFileSync(sourceFilePath, "utf8");
 
   const result = sourceFileContent.replace(
-    fragmentPlaceholderRegEx,
+    placeholderRegExp,
     (match, fragmentRelativeFilePath) => {
       const fragmentAbsoluteFilePath = path.join(
         path.dirname(sourceFilePath),

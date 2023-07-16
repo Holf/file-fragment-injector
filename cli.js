@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const injectFileFragment = require("./index.js");
+const injectFileFragment = require("./src/index.js");
 
 const [sourceFilePath, destFilePath] = process.argv.slice(2);
 

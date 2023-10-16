@@ -4,12 +4,9 @@
 name: CI
 
 on:
-  push:
-    branches-ignore:
-      - main
   pull_request:
     branches:
-      - main
+    - main
 
 jobs:
   build:

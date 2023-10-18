@@ -22,6 +22,13 @@
         "url": "https://github.com/drtrt-org/file-fragment-injector/issues"
     },
     "homepage": "https://github.com/drtrt-org/file-fragment-injector#readme",
+    "files": [
+        "LICENSE",
+        "README.md",
+        "cli.js",
+        "src/index.js",
+        "src/placeholderRegExp.js"
+    ],
     "devDependencies": {
         "eslint-config-prettier": "^8.8.0",
         "jest": "^29.6.1",

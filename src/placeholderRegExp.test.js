@@ -45,7 +45,7 @@ and yet more text`;
         });
     });
 
-    describe("Ignoring comments that don't fit the identifying conditons", () => {
+    describe("Ignoring comments that don't fit the identifying conditions", () => {
         const scenarios = [
             {
                 scenarioName: "Leading '%' is missing",

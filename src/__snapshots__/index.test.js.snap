@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`File fragment injection should 1`] = `
+exports[`File fragment injection should inject file fragments 1`] = `
 "<!doctype html>
 <html lang="en">
     <head>

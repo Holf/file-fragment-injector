@@ -6,12 +6,18 @@
         "node": ">=16.0.0 <20"
     },
     "main": "index.js",
+    "exports": {
+        ".": {
+            "import": "./index.mjs",
+            "require": "./index.js"
+        }
+    },
     "bin": {
         "file-fragment-injector": "./cli.js"
     },
     "scripts": {
         "pretest": "rimraf testAssets/generated && mkdirp testAssets/generated",
-        "test": "jest",
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
         "test:watch": "npm test -- --watch",
         "format": "prettier --write .",
         "commitlint": "commitlint --edit"

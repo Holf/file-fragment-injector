@@ -1,5 +1,5 @@
 {
-    "name": "@holf/file-fragment-injector",
+    "name": "@drtrt/inject-file-fragments",
     "version": "0.0.0-development",
     "description": "A simple NPM package that allows you to inject the contents of one file into another, replacing a designated placeholder.",
     "engines": {
@@ -13,7 +13,7 @@
         }
     },
     "bin": {
-        "file-fragment-injector": "./cli.js"
+        "inject-file-fragments": "./cli.js"
     },
     "scripts": {
         "pretest": "rimraf testAssets/generated && mkdirp testAssets/generated",
@@ -24,14 +24,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/drtrt-org/file-fragment-injector.git"
+        "url": "git+https://github.com/drtrt-org/inject-file-fragments.git"
     },
     "author": "drtrt-org",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/drtrt-org/file-fragment-injector/issues"
+        "url": "https://github.com/drtrt-org/inject-file-fragments/issues"
     },
-    "homepage": "https://github.com/drtrt-org/file-fragment-injector#readme",
+    "homepage": "https://github.com/drtrt-org/inject-file-fragments#readme",
     "files": [
         "LICENSE",
         "README.md",

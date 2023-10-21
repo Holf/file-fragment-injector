@@ -30,7 +30,7 @@ jobs:
                   node-version: "18.x"
                   cache: "npm"
             - run: npm ci
-            - run: npx semantic-release --dry-run
+            - run: npx semantic-release
               env:
                   GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_GITHUB }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

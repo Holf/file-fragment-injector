@@ -20,11 +20,12 @@
         "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
         "test:watch": "npm test -- --watch",
         "format": "prettier --write .",
-        "commitlint": "commitlint --edit"
+        "commitlint": "commitlint --edit",
+        "semantic-release": "semantic-release"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/drtrt-org/inject-file-fragments.git"
+        "url": "https://github.com/drtrt-org/inject-file-fragments.git"
     },
     "author": "drtrt-org",
     "license": "MIT",

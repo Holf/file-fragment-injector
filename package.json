@@ -1,6 +1,6 @@
 {
     "name": "@drtrt/inject-file-fragments",
-    "version": "0.0.0-development",
+    "version": "1.1.0",
     "description": "A simple NPM package that allows you to inject the contents of one file into another, replacing a designated placeholder.",
     "publishConfig": {
         "access": "public"

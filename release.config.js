@@ -1,6 +1,6 @@
 module.exports = {
     // This will be changed to 'main' once we're happy with everything
-    branches: "prep-for-publish",
+    branches: "main",
     plugins: [
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",

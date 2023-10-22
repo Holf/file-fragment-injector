@@ -1,33 +1,58 @@
 {
-    "name": "@holf/file-fragment-injector",
+    "name": "@drtrt/inject-file-fragments",
     "version": "1.1.0",
     "description": "A simple NPM package that allows you to inject the contents of one file into another, replacing a designated placeholder.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "engines": {
+        "node": ">=16.0.0 <20"
+    },
     "main": "index.js",
+    "exports": {
+        ".": {
+            "import": "./index.mjs",
+            "require": "./index.js"
+        }
+    },
     "bin": {
-        "file-fragment-injector": "./cli.js"
+        "inject-file-fragments": "./cli.js"
     },
     "scripts": {
         "pretest": "rimraf testAssets/generated && mkdirp testAssets/generated",
-        "test": "jest",
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
         "test:watch": "npm test -- --watch",
-        "format": "prettier --write ."
+        "format": "prettier --write .",
+        "commitlint": "commitlint --edit",
+        "semantic-release": "semantic-release"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/drtrt-org/file-fragment-injector.git"
+        "url": "https://github.com/drtrt-org/inject-file-fragments.git"
     },
     "author": "drtrt-org",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/drtrt-org/file-fragment-injector/issues"
+        "url": "https://github.com/drtrt-org/inject-file-fragments/issues"
     },
-    "homepage": "https://github.com/drtrt-org/file-fragment-injector#readme",
+    "homepage": "https://github.com/drtrt-org/inject-file-fragments#readme",
+    "files": [
+        "LICENSE",
+        "README.md",
+        "cli.js",
+        "src/index.js",
+        "src/placeholderRegExp.js"
+    ],
     "devDependencies": {
+        "@commitlint/cli": "^17.8.0",
+        "@commitlint/config-conventional": "^17.8.0",
+        "@semantic-release/git": "^10.0.1",
         "eslint-config-prettier": "^8.8.0",
+        "husky": "^8.0.3",
         "jest": "^29.6.1",
         "mkdirp": "^3.0.1",
         "prettier": "^3.0.0",
         "rimraf": "^5.0.5",
-        "yargs": "^17.7.2"
+        "semantic-release": "^22.0.5"
     }
 }

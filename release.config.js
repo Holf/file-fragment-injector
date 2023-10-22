@@ -14,4 +14,10 @@ module.exports = {
             },
         ],
     ],
+    releaseRules: [
+        {
+            type: "docs",
+            release: "patch",
+        },
+    ],
 };

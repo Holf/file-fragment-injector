@@ -1,3 +1,3 @@
-# inject-file-fragments
+# Inject File Fragments
 
-A simple NPM package that allows you to inject the contents of one file into another, replacing a designated placeholder.
+A simple, convention-driven NPM package that allows you to inject the contents of one or more files into another..

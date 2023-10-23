@@ -8,11 +8,12 @@
     "engines": {
         "node": ">=16.0.0 <20"
     },
-    "main": "index.js",
+    "main": "./src/index.js",
+    "module": "./src/index.mjs",
     "exports": {
         ".": {
-            "import": "./index.mjs",
-            "require": "./index.js"
+            "require": "./src/index.js",
+            "import": "./src/index.mjs"
         }
     },
     "bin": {
@@ -32,15 +33,13 @@
     },
     "author": "drtrt-org",
     "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/drtrt-org/inject-file-fragments/issues"
-    },
     "homepage": "https://github.com/drtrt-org/inject-file-fragments#readme",
     "files": [
         "LICENSE",
         "README.md",
         "cli.js",
         "src/index.js",
+        "src/index.mjs",
         "src/placeholderRegExp.js"
     ],
     "devDependencies": {

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const { injectFileFragment } = require("./src/index.js");
+const { injectFileFragments } = require("./src/index.js");
 
 const [sourceFilePath, destFilePath] = process.argv.slice(2);
 
@@ -9,4 +9,4 @@ if (!sourceFilePath || !destFilePath) {
     process.exit(1);
 }
 
-injectFileFragment(sourceFilePath, destFilePath);
+injectFileFragments(sourceFilePath, destFilePath);

@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const { placeholderRegExp } = require("./placeholderRegExp");
 
-const injectFileFragment = (sourceFilePath, destFilePath) => {
+const injectFileFragments = (sourceFilePath, destFilePath) => {
     const sourceFileContent = fs.readFileSync(sourceFilePath, "utf8");
 
     const result = sourceFileContent.replace(
@@ -21,4 +21,4 @@ const injectFileFragment = (sourceFilePath, destFilePath) => {
     fs.writeFileSync(destFilePath, result);
 };
 
-module.exports = { injectFileFragment };
+module.exports = { injectFileFragments };

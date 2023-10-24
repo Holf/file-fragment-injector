@@ -2,14 +2,14 @@ const fs = require("fs");
 const path = require("path");
 const { placeholderRegExp } = require("./placeholderRegExp");
 
-const injectFileFragments = (sourceFilePath, destFilePath) => {
-    const sourceFileContent = fs.readFileSync(sourceFilePath, "utf8");
+const injectFileFragments = (templateFilePath, generatedFilePath) => {
+    const sourceFileContent = fs.readFileSync(templateFilePath, "utf8");
 
     const result = sourceFileContent.replace(
         placeholderRegExp,
         (match, fragmentRelativeFilePath) => {
             const fragmentAbsoluteFilePath = path.join(
-                path.dirname(sourceFilePath),
+                path.dirname(templateFilePath),
                 fragmentRelativeFilePath,
             );
 
@@ -18,7 +18,7 @@ const injectFileFragments = (sourceFilePath, destFilePath) => {
         },
     );
 
-    fs.writeFileSync(destFilePath, result);
+    fs.writeFileSync(generatedFilePath, result);
 };
 
 module.exports = { injectFileFragments };

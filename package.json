@@ -10,6 +10,7 @@
     },
     "main": "./src/index.js",
     "module": "./src/index.mjs",
+    "types": ".src/index.d.ts",
     "exports": {
         ".": {
             "require": "./src/index.js",
@@ -34,14 +35,6 @@
     "author": "drtrt-org",
     "license": "MIT",
     "homepage": "https://github.com/drtrt-org/inject-file-fragments#readme",
-    "files": [
-        "LICENSE",
-        "README.md",
-        "cli.js",
-        "src/index.js",
-        "src/index.mjs",
-        "src/placeholderRegExp.js"
-    ],
     "devDependencies": {
         "@commitlint/cli": "^17.8.0",
         "@commitlint/config-conventional": "^17.8.0",

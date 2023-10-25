@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/drtrt-org/inject-file-fragments/compare/v1.4.1...v1.5.0) (2023-10-25)
+
+
+### Features
+
+* turn on NPM publish provenance ([e0dddf8](https://github.com/drtrt-org/inject-file-fragments/commit/e0dddf82e945697f11171da14fe2a98ef8615921))
+
 ## [1.4.1](https://github.com/drtrt-org/inject-file-fragments/compare/v1.4.0...v1.4.1) (2023-10-25)
 
 

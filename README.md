@@ -119,3 +119,7 @@ $ inject-file-fragments index.html.template index.html
     ...
 </html>
 ```
+
+## Release History
+
+The Change Log for this package is available in the GitHub Repo, [here](https://github.com/drtrt-org/inject-file-fragments/blob/main/CHANGELOG.md).

@@ -6,7 +6,7 @@ name: Release
 on:
     push:
         branches:
-            - generate-release-notes
+            - main
 
 jobs:
     release:

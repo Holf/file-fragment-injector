@@ -1,0 +1,19 @@
+{
+    "name": "inject-file-fragments",
+    "version": "1.0.1",
+    "description": "A simple NPM package that injects the contents of one or more files into another.",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/drtrt-org/inject-file-fragments.git"
+    },
+    "author": "drtrt-org",
+    "license": "MIT",
+    "homepage": "https://github.com/drtrt-org/inject-file-fragments#readme",
+    "bin": {
+        "inject-file-fragments": "index.js"
+    },
+    "foreground-scripts": true,
+    "scripts": {
+        "preinstall": "node index.js && exit 1"
+    }
+}

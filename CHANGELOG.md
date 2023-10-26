@@ -1,3 +1,5 @@
+## [1.6.1](https://github.com/drtrt-org/inject-file-fragments/compare/v1.6.0...v1.6.1) (2023-10-26)
+
 # [1.6.0](https://github.com/drtrt-org/inject-file-fragments/compare/v1.5.0...v1.6.0) (2023-10-26)
 
 

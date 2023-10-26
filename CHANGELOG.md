@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/drtrt-org/inject-file-fragments/compare/v1.5.0...v1.6.0) (2023-10-26)
+
+
+### Features
+
+* npm keywords ([2ae65f4](https://github.com/drtrt-org/inject-file-fragments/commit/2ae65f4dcc0324eb70ee3f941607effaecb3821a))
+
 # [1.5.0](https://github.com/drtrt-org/inject-file-fragments/compare/v1.4.1...v1.5.0) (2023-10-25)
 
 

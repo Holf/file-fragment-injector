@@ -1,3 +1,16 @@
+## [2.0.0](https://github.com/drtrt-org/inject-file-fragments/compare/v1.6.1...v2.0.0) (2023-10-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* change to conventionalcommits
+* error handling and messaging
+
+### Features
+
+* change to conventionalcommits ([6f17f85](https://github.com/drtrt-org/inject-file-fragments/commit/6f17f85a814d021510bd4ebcfa50826c6d6cc819))
+* error handling and messaging ([8b8bae0](https://github.com/drtrt-org/inject-file-fragments/commit/8b8bae0d4a4e3326ee6429f0f2b97b10f0e341de))
+
 ## [1.6.1](https://github.com/drtrt-org/inject-file-fragments/compare/v1.6.0...v1.6.1) (2023-10-26)
 
 # [1.6.0](https://github.com/drtrt-org/inject-file-fragments/compare/v1.5.0...v1.6.0) (2023-10-26)

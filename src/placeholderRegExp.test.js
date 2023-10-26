@@ -18,7 +18,7 @@ describe(`Placeholder RegExp:\n${placeholderRegExp}\n`, () => {
                 placeholder: (filePath) => `#% FRAGMENT_PATH:${filePath} %#`,
             },
             {
-                scenarioName: "Powershell",
+                scenarioName: "PowerShell",
                 placeholder: (filePath) => `<#% FRAGMENT_PATH:${filePath} %#>`,
             },
         ];

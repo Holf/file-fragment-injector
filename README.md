@@ -120,7 +120,7 @@ This allows placeholders to be used in many different template types, without ca
 | `XML`, `HTML`, etc.                           | `<!--% FRAGMENT_PATH: ./fragment.html %-->` |
 | `C`, `C++`, `CSS`, `Java`, `JavaScript`, etc. | `/*% FRAGMENT_PATH: ./fragment.cs %*/`      |
 | `sh`, `bash`, `Python`, `Ruby`, etc.          | `#% FRAGMENT_PATH: ./fragment.sh %#`        |
-| `Powershell`                                  | `<#% FRAGMENT_PATH: ./fragment.ps1 %#>`     |
+| `PowerShell`                                  | `<#% FRAGMENT_PATH: ./fragment.ps1 %#>`     |
 
 ### The Placeholder comment format must be precise
 
@@ -147,7 +147,7 @@ This would work fine, for example:
 ```
 <!-- prettier-ignore-end -->
 
-_**Note**: The entire comment is removed as part of the substitution with injected content_.
+_**Note**: The entire comment is removed as part of the injected content substitution_.
 
 ## Consumption from Node.js
 

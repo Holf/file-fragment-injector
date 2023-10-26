@@ -2,6 +2,20 @@
     "name": "@drtrt/inject-file-fragments",
     "version": "1.5.0",
     "description": "A simple NPM package that injects the contents of one or more files into another.",
+    "keywords": [
+        "inject",
+        "include",
+        "insert",
+        "file",
+        "fragments",
+        "build",
+        "CI",
+        "automation",
+        "script",
+        "command-line",
+        "cli",
+        "template"
+    ],
     "publishConfig": {
         "access": "public",
         "provenance": true

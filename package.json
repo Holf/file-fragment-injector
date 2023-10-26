@@ -23,6 +23,16 @@
     "engines": {
         "node": ">=16.0.0 <20"
     },
+    "files": [
+        "LICENSE",
+        "README.md",
+        "cli.js",
+        "src/index.js",
+        "src/placeholderRegExp.js",
+        "src/readFile.js",
+        "src/index.mjs",
+        "src/index.d.ts"
+    ],
     "main": "./src/index.js",
     "module": "./src/index.mjs",
     "types": ".src/index.d.ts",

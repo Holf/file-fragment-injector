@@ -10,7 +10,7 @@ describe(`Placeholder RegExp:\n${placeholderRegExp}\n`, () => {
                 placeholder: (filePath) => `<!--% FRAGMENT_PATH:${filePath} %-->`,
             },
             {
-                scenarioName: "C, C++, Java, etc.",
+                scenarioName: "C, C++, CSS, Java, etc.",
                 placeholder: (filePath) => `/*% FRAGMENT_PATH:${filePath} %*/`,
             },
             {
@@ -18,7 +18,7 @@ describe(`Placeholder RegExp:\n${placeholderRegExp}\n`, () => {
                 placeholder: (filePath) => `#% FRAGMENT_PATH:${filePath} %#`,
             },
             {
-                scenarioName: "Powershell",
+                scenarioName: "PowerShell",
                 placeholder: (filePath) => `<#% FRAGMENT_PATH:${filePath} %#>`,
             },
         ];

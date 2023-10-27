@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
-// The following import is published, but eslint doesn't recognise the wildcard
-// used ("./dist/") to do so.
-// eslint-disable-next-line node/no-unpublished-import
+// The following import is generated, but eslint doesn't know this. So:
+// eslint-disable-next-line node/no-unpublished-import, node/no-missing-import
 import { injectFileFragments } from "./dist/index.js";
 
 const [templateFilePath, generatedFilePath] = process.argv.slice(2);

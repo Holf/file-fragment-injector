@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/drtrt-org/inject-file-fragments/compare/v2.0.0...v2.0.1) (2023-10-27)
+
+
+### Bug Fixes
+
+* typescript & ESM to fix package import issues ([5394893](https://github.com/drtrt-org/inject-file-fragments/commit/539489377ae3b1f00c639a69eba08e5a901b8306))
+
 ## [2.0.0](https://github.com/drtrt-org/inject-file-fragments/compare/v1.6.1...v2.0.0) (2023-10-26)
 
 

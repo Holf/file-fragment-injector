@@ -27,31 +27,33 @@
         "LICENSE",
         "README.md",
         "cli.js",
-        "src/index.js",
-        "src/placeholderRegExp.js",
-        "src/readFile.js",
-        "src/index.mjs",
-        "src/index.d.ts"
+        "./dist/"
     ],
-    "main": "./src/index.js",
-    "module": "./src/index.mjs",
-    "types": ".src/index.d.ts",
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
     "exports": {
         ".": {
-            "require": "./src/index.js",
-            "import": "./src/index.mjs"
+            "require": "./dist/index.cjs",
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
         }
     },
     "bin": {
         "inject-file-fragments": "cli.js"
     },
     "scripts": {
+        "prepack": "npm run build",
         "pretest": "rimraf testAssets/generated && mkdirp testAssets/generated",
-        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+        "test": "jest",
         "test:watch": "npm test -- --watch",
-        "format": "prettier --write .",
+        "lint": "prettier --check . && eslint .",
+        "format": "prettier --write . && eslint --fix .",
         "commitlint": "commitlint --edit",
-        "semantic-release": "semantic-release --dry-run"
+        "semantic-release": "semantic-release --dry-run",
+        "build": "tsup src/index.ts --format cjs,esm --dts --clean --sourcemap",
+        "watch": "npm run build -- --watch src"
     },
     "repository": {
         "type": "git",
@@ -66,6 +68,9 @@
         "@semantic-release/changelog": "^6.0.3",
         "@semantic-release/git": "^10.0.1",
         "@semantic-release/github": "^9.2.1",
+        "@types/jest": "^29.5.6",
+        "@typescript-eslint/eslint-plugin": "^6.9.0",
+        "@typescript-eslint/parser": "^6.9.0",
         "eslint": "^8.52.0",
         "eslint-config-prettier": "^8.10.0",
         "eslint-plugin-jest": "^27.4.3",
@@ -76,6 +81,8 @@
         "mkdirp": "^3.0.1",
         "prettier": "^3.0.3",
         "rimraf": "^5.0.5",
-        "semantic-release": "^22.0.5"
+        "semantic-release": "^22.0.5",
+        "ts-jest": "^29.1.1",
+        "tsup": "^7.2.0"
     }
 }

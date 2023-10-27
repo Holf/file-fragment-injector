@@ -13,8 +13,8 @@ const commentDelimiters = [
 
 const [commentOpenersRegExp, commentClosersRegExp] = commentDelimiters.reduce(
     ([commentOpeners, commentClosers], [opener, closer]) => {
-        const fragmentStartString = opener.source ? opener.source : opener;
-        const fragmentEndString = closer.source ? closer.source : closer;
+        const fragmentStartString: string = opener instanceof RegExp ? opener.source : opener;
+        const fragmentEndString: string = closer instanceof RegExp ? closer.source : closer;
 
         if (!commentOpeners) {
             return [fragmentStartString, fragmentEndString];
@@ -28,9 +28,7 @@ const [commentOpenersRegExp, commentClosersRegExp] = commentDelimiters.reduce(
     [],
 );
 
-const placeholderRegExp = new RegExp(
+export const placeholderRegExp = new RegExp(
     `(?:${commentOpenersRegExp})% *FRAGMENT_PATH: *(.*?) *%(?:${commentClosersRegExp})`,
     "g",
 );
-
-module.exports = { placeholderRegExp };

@@ -1,7 +1,10 @@
-jest.mock("fs");
-const fs = require("fs");
+import { readFileSync } from "fs";
+import { readFile } from "./readFile";
+import { NodeError } from "./NodeError";
 
-const { readFile } = require("./readFile");
+jest.mock("fs");
+
+const readFileSyncMock = readFileSync as jest.Mock;
 
 const filePath = "./anyOldFilePath";
 const fileType = "Template File";
@@ -26,10 +29,10 @@ describe("Read File", () => {
         },
     ].forEach(({ errorCode, errorMessage }) => {
         it(`should throw the correct friendly error for an '${errorCode}' error`, () => {
-            const error = new Error("Mocked Error");
+            const error = new Error("Mocked Error") as NodeError;
             error.code = errorCode;
 
-            fs.readFileSync.mockImplementationOnce(() => {
+            readFileSyncMock.mockImplementationOnce(() => {
                 throw error;
             });
 
@@ -37,12 +40,12 @@ describe("Read File", () => {
 
             try {
                 readFile(filePath, fileType);
-            } catch (error) {
-                errorToValidate = error;
+            } catch (e: unknown) {
+                errorToValidate = e as NodeError;
             }
 
-            expect(errorToValidate.cause).toBe(error);
-            expect(errorToValidate.message).toBe(errorMessage);
+            expect(errorToValidate!.cause).toBe(error);
+            expect(errorToValidate!.message).toBe(errorMessage);
         });
     });
 });

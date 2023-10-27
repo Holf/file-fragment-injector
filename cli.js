@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 
-const { injectFileFragments } = require("./src/index.js");
+// The following import is published, but eslint doesn't recognise the wildcard
+// used ("./dist/") to do so.
+// eslint-disable-next-line node/no-unpublished-import
+import { injectFileFragments } from "./dist/index.js";
 
 const [templateFilePath, generatedFilePath] = process.argv.slice(2);
 

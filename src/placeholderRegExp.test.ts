@@ -1,4 +1,4 @@
-const { placeholderRegExp } = require("./placeholderRegExp");
+import { placeholderRegExp } from "./placeholderRegExp";
 
 describe(`Placeholder RegExp:\n${placeholderRegExp}\n`, () => {
     describe("Parsing various comment types", () => {
@@ -7,19 +7,19 @@ describe(`Placeholder RegExp:\n${placeholderRegExp}\n`, () => {
         const scenarios = [
             {
                 scenarioName: "XML, HTML, etc.",
-                placeholder: (filePath) => `<!--% FRAGMENT_PATH:${filePath} %-->`,
+                placeholder: (filePath: string) => `<!--% FRAGMENT_PATH:${filePath} %-->`,
             },
             {
                 scenarioName: "C, C++, CSS, Java, etc.",
-                placeholder: (filePath) => `/*% FRAGMENT_PATH:${filePath} %*/`,
+                placeholder: (filePath: string) => `/*% FRAGMENT_PATH:${filePath} %*/`,
             },
             {
                 scenarioName: "Shells, Python, Ruby, etc.",
-                placeholder: (filePath) => `#% FRAGMENT_PATH:${filePath} %#`,
+                placeholder: (filePath: string) => `#% FRAGMENT_PATH:${filePath} %#`,
             },
             {
                 scenarioName: "PowerShell",
-                placeholder: (filePath) => `<#% FRAGMENT_PATH:${filePath} %#>`,
+                placeholder: (filePath: string) => `<#% FRAGMENT_PATH:${filePath} %#>`,
             },
         ];
 

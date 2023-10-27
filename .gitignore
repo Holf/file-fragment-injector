@@ -1,4 +1,5 @@
 /node_modules
+/dist
 
 # This test file is generated and should not be committed
 /testAssets/generated

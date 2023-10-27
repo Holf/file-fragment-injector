@@ -1,5 +1,4 @@
-module.exports = {
-    transform: {},
-    moduleFileExtensions: ["js", "mjs"],
-    testRegex: ".*\\.test\\.m?js$",
+export default {
+    preset: "ts-jest",
+    testEnvironment: "node",
 };

@@ -1,10 +1,13 @@
-const fs = require("fs");
+import fs from "fs";
+import { NodeError } from "./NodeError";
 
-function readFile(filePath, fileType) {
+export const readFile = function (filePath: string, fileType: string): string {
     try {
         const data = fs.readFileSync(filePath, "utf-8");
         return data;
-    } catch (error) {
+    } catch (e: unknown) {
+        const error = e as NodeError;
+
         let message = `Cannot read ${fileType}. `;
 
         switch (error.code) {
@@ -23,5 +26,4 @@ function readFile(filePath, fileType) {
 
         throw new Error(message, { cause: error });
     }
-}
-exports.readFile = readFile;
+};

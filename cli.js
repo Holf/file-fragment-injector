@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-const { injectFileFragments } = require("./src/index.js");
+// The following import is generated, but eslint doesn't know this. So:
+// eslint-disable-next-line node/no-unpublished-import, node/no-missing-import
+import { injectFileFragments } from "./dist/index.js";
 
 const [templateFilePath, generatedFilePath] = process.argv.slice(2);
 

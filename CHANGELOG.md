@@ -1,3 +1,14 @@
+## [3.0.0](https://github.com/drtrt-org/inject-file-fragments/compare/v2.0.1...v3.0.0) (2023-11-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop node 16 support
+
+### Miscellaneous Chores
+
+* drop node 16 support ([a539e9e](https://github.com/drtrt-org/inject-file-fragments/commit/a539e9e4c51078c26772522d5ec52f38c5f33c36))
+
 ## [2.0.1](https://github.com/drtrt-org/inject-file-fragments/compare/v2.0.0...v2.0.1) (2023-10-27)
 
 

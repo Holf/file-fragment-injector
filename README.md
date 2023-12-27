@@ -41,7 +41,7 @@ console.log("Why, hello there.");
     </head>
 
     <body>
-        <!--% FRAGMENT_PATH:. /fragment_2.html %-->
+        <!--% FRAGMENT_PATH: ./fragment_2.html %-->
     </body>
 </html>
 ```
@@ -216,6 +216,8 @@ $ inject-file-fragments index.html.template index.html
 ```
 
 ... gives the result:
+
+`index.html`:
 
 ```html
 <!doctype html>

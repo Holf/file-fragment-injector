@@ -70,7 +70,7 @@ $ inject-file-fragments index.html.template index.html
     </head>
 
     <body>
-        <div>Hello, again</div>
+        <div>Hello, again.</div>
     </body>
 </html>
 ```

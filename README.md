@@ -1,5 +1,9 @@
 # Inject File Fragments
 
+| _This package is a key component of the build process for [Fluent Interface Generator](https://www.fluentinterfacegenerator.com)_ |
+| --------------------------------------------------------------------------------------------------------------------------------- |
+
+<br>
 `@drtrt/inject-file-fragments` is for those moments when all you want to do is inject the contents of one file into another, in the simplest and most framework-free manner possible.
 
 [![CI status](https://img.shields.io/badge/ci-passing-green)](https://github.com/drtrt-org/inject-file-fragments/actions/workflows/CI.yml)

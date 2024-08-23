@@ -1,9 +1,10 @@
 # Inject File Fragments
 
-| _`@drtrt/inject-file-fragments` is used to build [Fluent Interface Generator](https://www.fluentinterfacegenerator.com)_ |
-| :----------------------------------------------------------------------------------------------------------------------- |
+| _`@drtrt/inject-file-fragments` is used to build <a href="https://www.fluentinterfacegenerator.com" target="_blank">Fluent Interface Generator</a>_ |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 <br>
+
 `@drtrt/inject-file-fragments` is for those moments when all you want to do is inject the contents of one file into another, in the simplest and most framework-free manner possible.
 
 [![CI status](https://img.shields.io/badge/ci-passing-green)](https://github.com/drtrt-org/inject-file-fragments/actions/workflows/CI.yml)

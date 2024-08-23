@@ -1,7 +1,7 @@
 # Inject File Fragments
 
-| _`@drtrt/inject-file-fragments` is used to build <a href="https://www.fluentinterfacegenerator.com" target="_blank">Fluent Interface Generator</a>_ |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| _`@drtrt/inject-file-fragments` is used to build [Fluent Interface Generator](https://www.fluentinterfacegenerator.com)_ |
+| :----------------------------------------------------------------------------------------------------------------------- |
 
 <br>
 

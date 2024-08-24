@@ -1,16 +1,16 @@
 # Inject File Fragments
 
-| _`@drtrt/inject-file-fragments` is used to build [Fluent Interface Generator](https://www.fluentinterfacegenerator.com)_ |
-| :----------------------------------------------------------------------------------------------------------------------- |
-
-<br>
-
-`@drtrt/inject-file-fragments` is for those moments when all you want to do is inject the contents of one file into another, in the simplest and most framework-free manner possible.
-
 [![CI status](https://img.shields.io/badge/ci-passing-green)](https://github.com/drtrt-org/inject-file-fragments/actions/workflows/CI.yml)
 [![NPM version](https://img.shields.io/npm/v/@drtrt/inject-file-fragments)](https://www.npmjs.com/package/@drtrt/inject-file-fragments)
 [![License](https://img.shields.io/npm/l/@drtrt/inject-file-fragments)](./LICENSE)
 [![NPM bundle size analysis](https://img.shields.io/bundlephobia/minzip/@drtrt/inject-file-fragments)](https://bundlephobia.com/package/@drtrt/inject-file-fragments)
+
+`@drtrt/inject-file-fragments` is for those moments when all you want to do is inject the contents of one file into another, in the simplest and most framework-free manner possible.
+
+| _`@drtrt/inject-file-fragments` is used to build [Fluent Interface Generator](https://www.fluentinterfacegenerator.com)_ |
+| :----------------------------------------------------------------------------------------------------------------------- |
+
+<br/>
 
 ## Example
 

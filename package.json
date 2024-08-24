@@ -82,5 +82,8 @@
         "ts-jest": "29",
         "tsup": "8",
         "typescript-eslint": "^8.2.0"
+    },
+    "overrides": {
+        "conventional-changelog-conventionalcommits": ">= 8.0.0"
     }
 }

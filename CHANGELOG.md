@@ -1,3 +1,9 @@
+## [3.0.3](https://github.com/drtrt-org/inject-file-fragments/compare/v3.0.2...v3.0.3) (2024-08-24)
+
+### Bug Fixes
+
+* ugrade dependency ([8558194](https://github.com/drtrt-org/inject-file-fragments/commit/855819432631a5ffc593fd673e8d25fd60b646e7)), closes [#issuecomment-2144694326](https://github.com/drtrt-org/inject-file-fragments/issues/issuecomment-2144694326)
+
 ## [3.0.2](https://github.com/drtrt-org/inject-file-fragments/compare/v3.0.1...v3.0.2) (2023-12-27)
 
 ## [3.0.1](https://github.com/drtrt-org/inject-file-fragments/compare/v3.0.0...v3.0.1) (2023-11-09)

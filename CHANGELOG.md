@@ -1,3 +1,9 @@
+## [3.1.0](https://github.com/drtrt-org/inject-file-fragments/compare/v3.0.4...v3.1.0) (2024-08-24)
+
+### Features
+
+* node engine version now specified as v18 or higher ([c108bab](https://github.com/drtrt-org/inject-file-fragments/commit/c108bab3dc6b3a9ae014d03b2fb41b1a835834c8))
+
 ## [3.0.4](https://github.com/drtrt-org/inject-file-fragments/compare/v3.0.3...v3.0.4) (2024-08-24)
 
 ## [3.0.3](https://github.com/drtrt-org/inject-file-fragments/compare/v3.0.2...v3.0.3) (2024-08-24)

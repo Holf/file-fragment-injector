@@ -7,8 +7,8 @@
 
 `@drtrt/inject-file-fragments` is for those moments when all you want to do is inject the contents of one file into another, in the simplest and most framework-free manner possible.
 
-| _`@drtrt/inject-file-fragments` is used to build [Fluent Interface Generator](https://www.fluentinterfacegenerator.com)_ |
-| :----------------------------------------------------------------------------------------------------------------------- |
+| _`@drtrt/inject-file-fragments` is used to build [Fluent API Generator](https://www.fluentapigen.com)_ |
+| :----------------------------------------------------------------------------------------------------- |
 
 <br/>
 
